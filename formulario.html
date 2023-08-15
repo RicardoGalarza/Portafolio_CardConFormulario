@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Añadir Super-Heroes</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <a href="http://"> 20% de descuento en todos los productos! </a>
+      </div>
+      <div class="header-bottom">
+        <img src="img/lapto.png" alt="" />
+        <h1>Nombre Tienda</h1>
+      </div>
+
+      <div class="submenu">
+        <ul>
+          <li><a href="añadir.html">Contacto</a></li>
+          <li><a href="añadir.html">Registro</a></li>
+          <li><a href="index.html">Ingresar</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+<form action="#">
+      <div class="cabecera">
+        <h1>Añadí tu súper</h1>
+        <h2>Agregá tu personaje favorito completando las opciones.</h2>
+      </div>
+
+      <div class="cajacentral">
+        <div class="contain">
+          <div class="nombre">
+            <label for="nombre">*Nombre</label> <br />
+            <input type="text" name="name" id="nombre" />
+          </div>
+
+          <div class="especie">
+            <label for="especie">*Especie</label> <br />
+            <select name="esp" id="especie">
+              <option value="Batman">Especie</option>
+              <option value="Harley"></option>
+            </select>
+          </div>
+        </div>
+
+        <div class="contain">
+          <div class="fecha">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="date" id="fecha" />
+          </div>
+
+          <div class="foto">
+            <label for="foto">Agregar Foto</label>
+            <input type="file" name="foto" id="foto" />
+          </div>
+        </div>
+
+        <div class="contain">
+          <div class="descripcion">
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10">
+Descripción</textarea
+            >
+          </div>
+
+          <div class="contain2">
+            <div>
+              <label for="poderes"> Poderes </label> <br />
+
+              <div class="check">
+                <input
+                  type="checkbox"
+                  name="poderes"
+                  value="Volar"
+                  id="volar"
+                />
+                <label for="volar"> Volar </label> <br />
+
+                <input
+                  type="checkbox"
+                  name="poderes"
+                  value="si"
+                  id="inteligencia"
+                />
+                <label for="inteligencia"> SuperInteligencia </label> <br />
+
+                <input type="checkbox" name="poderes" value="vl" id="laser" />
+                <label for="laser"> Vista de rayo Láser </label> <br />
+
+                <input type="checkbox" name="foto" value="bg" id="billetera" />
+                <label for="billetera"> Billetera gorda </label>
+              </div>
+            </div>
+
+            <hr />
+
+            <div>
+              <label for="tipopersonaje">Tipo de personaje</label> <br />
+
+              <div class="personajes">
+                <input type="radio" name="hero" value="Héroe/Heroina" />
+                <label for="">Héroe/Heroina</label> <br />
+
+                <input type="radio" name="vill" value="Villano/Villana" />
+                <label for="">Villano/Villana</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Añadir">
+        <button class="boton">Añadir</button>
+      </div>
+    </form>
+    </main>
+    
+
+    <footer class="footer">
+      <p>Todos los derechos reservados a <span>front end 1</span></p>
+    </footer>
+  </body>
+</html>
